@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guillem Marsal Portfoli</title>
+
+    <link rel="stylesheet" href="../ccs/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../ccs/style.css">
+</head>
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>
+
+<body>
+   <div id="contenidor_general">
+    <div id="xarxaS"><i class="fab fa-instagram"></i> <i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i>
+    </div>
+    <div id="flex">
+        <div class="botto"><a href="../index.html">Inici</a></div>
+        <div class="botto"><a href="galeria.html">Galeria</a></div>
+        <div class="botto"><a href="curriculum.html">Curriculum</a></div>
+        <div class="botto">Contacte</div>
+    </div>
+    <div id="xarxaS">
+<h1 class="centre">Guillem Marsal</h1>
+    </div>
+
+    <div class="imatges">
+        <img class="mySlides" src="../imatges/Arrandra_i_Grendri_01_(Consecuencies%20de%20ser%20diferent).png" style="width:100%">
+        <img class="mySlides" src="../imatges/Arrandra_i_Grendri_02(Un%20gnoll%20ploramiques).png" style="width:100%">
+        <video class="mySlides" src="../imatges/granota.mp4" style="width: 100%" controls loop></video>
+        <video class="mySlides" src="../imatges/Oliva%20a%20la%20cuina.vlc" controls></video>
+
+
+        <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+        <!--<button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>-->
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <div class="text">Aquesta és una mostra de les meves feines durant el <strong>Cicle Formatiu d'Animacions 3D, Jocs i Entorns Interactius</strong>. </div>
+</div>
+    <div class="footer">Guillem Marsal </div>
+
+
+</body>
+
+</html>

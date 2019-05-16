@@ -1,0 +1,148 @@
+/*Que fas tu aquí?*/
+/*elements*/
+body {
+    background-color: #3399cc;
+}
+
+#contenidor_general {
+    display: block;
+    width: 80%;
+    margin: auto;
+    background-color: #9966ff;
+}
+
+#xarxaS {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    flex-direction: row;
+    
+}
+
+#text {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#flex {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: raw;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.imatges {
+    relative
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    background-color: white;
+    padding: 4px;
+    border: 1px solid black;
+}
+
+.botto {
+    margin: auto;
+    border: 1px solid black;
+    flex: 1;
+    width: 60px;
+    height: 18px;
+    margin: 24px;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.informa {
+    margin: auto;
+    border: 1px solid black;
+    width: 90%;
+
+}
+
+/*Icones */
+.fa-instagram {
+    font-size: 35px;
+    color: tomato;
+    margin: 6px;
+}
+
+.fa-facebook-f {
+    font-size: 35px;
+    color: tomato;
+    margin: 6px;
+}
+
+.fa-twitter {
+    font-size: 35px;
+    color: tomato;
+    margin: 6px;
+}
+
+/* imatges */
+.imatge1 {
+    width: 100%;
+}
+
+.imatge2 {
+    display: none;
+    width: 100%;
+}
+
+@media only screen and (max-width:500px) {
+    .imatge1 {
+        display: none;
+    }
+
+    .imatge2 {
+        display: block;
+        width: 100%;
+    }
+}
+.boton-slider {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+}
+
+.boton-slider:hover {
+    width: 30px;
+    height: 30px;
+    background-color: ghostwhite;
+}
+
+.fletxaDreta-slider {
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    */
+}
+
+.fletxaEsquerra-slider {
+    position: absolute;  
+        top: 55%;
+    right: 0%;
+    transform: translate(0%, -50%);
+}
+
+
+.centre{
+    text-align: center;
+    
+}
